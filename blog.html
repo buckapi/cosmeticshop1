@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Checkout</title>
+  <title>Cart</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700;900&amp;display=swap" />
   <link rel="shortcut icon" type="image/png" href="assets/images/fav.png" />
@@ -26,9 +26,9 @@
       <div class="menu__wrapper"><a href="https://avitex.vn/index.html"><img src="assets/images/logo-white.png" alt="Logo" /></a>
         <div class="navigator -white">
           <ul>
-            <li class="relative"><a href="checkout.html">Home<span class="dropable-icon"><i class="fas fa-angle-down"></i></span></a>
+            <li class="relative"><a href="blog.html">Home<span class="dropable-icon"><i class="fas fa-angle-down"></i></span></a>
               <ul class="dropdown-menu">
-                <li><a href="checkout.html">Beauty Salon</a></li>
+                <li><a href="blog.html">Beauty Salon</a></li>
                 <li><a href="homepage2.html">Makeup Salon</a></li>
                 <li><a href="homepage3.html">Natural Shop</a></li>
                 <li><a href="homepage4.html">Spa Shop</a></li>
@@ -67,19 +67,19 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="menu-functions -white"><a class="menu-icon -search" href="checkout.html#"><img
+        <div class="menu-functions -white"><a class="menu-icon -search" href="blog.html#"><img
               src="assets/images/header/search-icon-white.png" alt="Search icon" /></a>
           <div class="search-box">
             <form>
               <input type="text" placeholder="What are you looking for?" name="search" />
               <button><img src="assets/images/header/search-icon.png" alt="Search icon" /></button>
             </form>
-          </div><a class="menu-icon -wishlist" href="../../wishlist.html"><img
+          </div><a class="menu-icon -wishlist" href="wishlist.html"><img
               src="assets/images/header/wishlist-icon-white.png" alt="Wishlist icon" /></a>
-          <div class="menu-cart"><a class="menu-icon -cart" href="checkout.html#"><img src="assets/images/header/cart-icon-white.png"
+          <div class="menu-cart"><a class="menu-icon -cart" href="blog.html#"><img src="assets/images/header/cart-icon-white.png"
                 alt="Wishlist icon" /><span class="cart__quantity">0</span></a>
             <h5>Cart:<span>$100</span></h5>
-          </div><a class="menu-icon -navbar" href="checkout.html#">
+          </div><a class="menu-icon -navbar" href="blog.html#">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -91,170 +91,276 @@
   <div id="content">
     <div class="breadcrumb">
       <div class="container">
-        <h2>Checkout</h2>
+        <h2>Blog</h2>
         <ul>
           <li>Home</li>
-          <li>Shop</li>
-          <li class="active">Checkout</li>
+          <li class="active">Blog</li>
         </ul>
       </div>
     </div>
-    <div class="shop">
+    <div class="blog">
       <div class="container">
-        <div class="checkout">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <form action="checkout.html">
-                  <div class="checkout__form">
-                    <div class="checkout__form__contact">
-                      <div class="checkout__form__contact__title">
-                        <h5 class="checkout-title">Contact information</h5>
-                        <p> Already have an account?<a href="checkout.html#">Login</a></p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="blog-sidebar">
+              <div class="blog-sidebar__section -search">
+                <form>
+                  <input type="text" placeholder="Enter keyword" name="search" />
+                  <button><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="blog-sidebar__section">
+                <h5 class="blog-sidebar__title">Follow me</h5>
+                <div class="social-icons -border -round -border--light-bg">
+                  <ul>
+                    <li><a href="https://www.facebook.com/" style="color: undefined"><i
+                          class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com" style="color: undefined"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/" style="color: undefined"><i class="fab fa-instagram"> </i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" style="color: undefined"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog-sidebar__section -categories">
+                <h5 class="blog-sidebar__title">Categories</h5>
+                <ul>
+                  <li><a href="blog.html#">Beauty tips<span>1</span></a></li>
+                  <li><a href="blog.html#">Make up<span>2</span></a></li>
+                  <li><a href="blog.html#">Skin care<span>3</span></a></li>
+                  <li><a href="blog.html#">Videos<span>4</span></a></li>
+                </ul>
+              </div>
+              <div class="blog-sidebar__section -polular-post">
+                <h5 class="blog-sidebar__title">Popular post</h5>
+                <div class="post-card-three">
+                  <div class="post-card-three__image"><img src="assets/images/blog/1.png"
+                      alt="Beauty Tips For Women Who Don’t Like Wearing Makeup" /></div>
+                  <div class="post-card-three__content"><a href="../../post-detail.html">Beauty Tips For Women Who Don’t Like
+                      Wearing Makeup</a>
+                    <p>2015-03-25</p>
+                  </div>
+                </div>
+                <div class="post-card-three">
+                  <div class="post-card-three__image"><img src="assets/images/blog/2.png"
+                      alt="The 8 Best Clay Masks For Acne Prone Skin" /></div>
+                  <div class="post-card-three__content"><a href="../../post-detail.html">The 8 Best Clay Masks For Acne Prone
+                      Skin</a>
+                    <p>2015-03-21</p>
+                  </div>
+                </div>
+                <div class="post-card-three">
+                  <div class="post-card-three__image"><img src="assets/images/blog/3.png"
+                      alt="Well-ageing: Why is the skin matrisome important?" /></div>
+                  <div class="post-card-three__content"><a href="../../post-detail.html">Well-ageing: Why is the skin
+                      matrisome important?</a>
+                    <p>2015-03-22</p>
+                  </div>
+                </div>
+                <div class="post-card-three">
+                  <div class="post-card-three__image"><img src="assets/images/blog/4.png"
+                      alt="6 Clay Masks That Combat Oily, Acne-Prone Skin" /></div>
+                  <div class="post-card-three__content"><a href="../../post-detail.html">6 Clay Masks That Combat Oily,
+                      Acne-Prone Skin</a>
+                    <p>2015-03-23</p>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-sidebar__section -newsletter">
+                <h5 class="blog-sidebar__title">News letter</h5>
+                <p>Subscribe to our newsletter a nd get our newest updates right on your inbox.</p>
+                <div class="subscribe-form blog-sidebar-newsletter">
+                  <form class="mc-form">
+                    <input class="email" id="mc-form-email" type="email" placeholder="Enter your email" />
+                    <label for="agree">
+                      <input id="agree" type="checkbox" name="agree" />I agree to the terms & conditions
+                    </label>
+                    <button class="button">Subcribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="blog-content">
+              <div class="row">
+                <div class="col-12">
+                  <div class="post-card-featured">
+                    <div class="post-card-featured__image"><img src="assets/images/blog/1.png"
+                        alt="Beauty Tips For Women Who Don’t Like Wearing Makeup" /></div>
+                    <div class="post-card-featured__content">
+                      <div class="post-card-featured__content__date">
+                        <h5>05</h5>
+                        <p>Feb</p>
                       </div>
-                      <div class="input-validator">
-                        <input type="text" name="contact" placeholder="Email or mobile phone number" />
-                      </div>
-                      <label class="checkbox-label" for="subcribe-news">
-                        <input type="checkbox" id="subcribe-news" name="subcribeNews" />Keep me up to dateon news and
-                        exclusive offers
-                      </label>
-                    </div>
-                    <div class="checkout__form__shipping">
-                      <h5 class="checkout-title">Shipping address</h5>
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-                          <div class="input-validator">
-                            <label>First name <span>*</span>
-                              <input type="text" name="firstName" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                          <div class="input-validator">
-                            <label>Last name<span>*</span>
-                              <input type="text" name="lastName" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Country<span>*</span>
-                              <input type="text" name="country" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Address <span>*</span>
-                              <input type="text" name="streetAddress" placeholder="Steet address" />
-                              <input type="text" name="apartment"
-                                placeholder="Apartment, suite, unite ect ( optinal )" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Town/City <span>*</span>
-                              <input type="text" name="town" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Country/State <span>*</span>
-                              <input type="text" name="state" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Postcode/ZIP <span>*</span>
-                              <input type="text" name="zip" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-validator">
-                            <label>Order note
-                              <input type="text" name="note"
-                                placeholder="Note about your order, e.g, special noe for delivery" />
-                            </label>
-                          </div>
-                        </div>
-                        <label class="checkbox-label" for="save">
-                          <input id="save" type="checkbox" name="saveInfo" />Save this infomation for next time
-                        </label>
+                      <div class="post-card-featured__content__detail">
+                        <div class="post-card-featured__info">
+                          <p>by <span>Lindsay Weinberg</span></p><a href="blog.html#">Beauty tips</a>
+                        </div><a class="post-card-featured-title" href="../../post-detail.html">Beauty Tips For Women Who
+                          Don’t Like Wearing Makeup</a>
+                        <p class="post-card-featured-description">It is a long established fact that a reader will be
+                          distracted by the readable content of</p>
                       </div>
                     </div>
                   </div>
-                </form>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-12 ml-auto">
-                    <div class="checkout__total">
-                      <h5 class="checkout-title">Your order</h5>
-                      <form class="checkout__total__coupon">
-                        <h5>Coupon code</h5>
-                        <div class="input-validator">
-                          <input type="text" placeholder="Your code here" name="coupon" />
-                        </div><a class="btn -dark" href="checkout.html#">apply</a>
-                      </form>
-                      <div class="checkout__total__price">
-                        <h5>Product</h5>
-                        <table>
-                          <colgroup>
-                            <col style="width: 70%" />
-                            <col style="width: 30%" />
-                          </colgroup>
-                          <tbody>
-                            <tr>
-                              <td><span>01 x </span>The expert mascaraa
-                              </td>
-                              <td>$35.00</td>
-                            </tr>
-                            <tr>
-                              <td><span>01 x </span>Velvet Melon High Intensity
-                              </td>
-                              <td>$38.00</td>
-                            </tr>
-                            <tr>
-                              <td><span>01 x </span>Leather shopper bag
-                              </td>
-                              <td>$35.00</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div class="checkout__total__price__total-count">
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>Subtotal</td>
-                                <td>$108.00</td>
-                              </tr>
-                              <tr>
-                                <td>Total</td>
-                                <td>$108.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/2.png"
+                        alt="The 8 Best Clay Masks For Acne Prone Skin" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
                         </div>
-                        <div class="checkout__total__price__payment">
-                          <label class="checkbox-label" for="payment">
-                            <input id="payment" type="checkbox" name="payment" />Cheque payment
-                          </label>
-                          <label class="checkbox-label" htmlfor="paypal">
-                            <input id="paypal" type="checkbox" name="paypal" />PayPal
-                          </label>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Evelyn Tucker</span></p><a href="blog.html#">Make up</a>
                         </div>
                       </div>
-                      <button class="btn -red">Place order
-                      </button>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">The 8 Best Clay Masks For Acne Prone
+                        Skin</a>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/3.png"
+                        alt="Well-ageing: Why is the skin matrisome important?" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Jackson Hunter</span></p><a href="blog.html#">Skin care</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">Well-ageing: Why is the skin
+                        matrisome important?</a>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/4.png"
+                        alt="6 Clay Masks That Combat Oily, Acne-Prone Skin" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Lou Taylor</span></p><a href="blog.html#">Body care</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">6 Clay Masks That Combat Oily,
+                        Acne-Prone Skin</a>
+                      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/5.png"
+                        alt="The Bold &amp; Beautiful Issue" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Lou Taylor</span></p><a href="blog.html#">Videos</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">The Bold &amp; Beautiful Issue</a>
+                      <p>In partnership with recycling specialist Werner &amp; Mertz, the two companies aim to reduce
+                        uncertainty in the cosmetics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/6.png"
+                        alt="This African make-up brand issues casting call for 100 British women" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Lou Taylor</span></p><a href="blog.html#">Beauty tips</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">This African make-up brand issues
+                        casting call for 100 British women</a>
+                      <p>Zaron Cosmetics is said to be the fastest growing colour cosmetics company in the continent and
+                        has its eyes on the UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/7.png"
+                        alt="Coty appoints Princess Anna of Bavaria as new Chief of Corporate Affairs" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Lou Taylor</span></p><a href="blog.html#">Make up</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">Coty appoints Princess Anna of
+                        Bavaria as new Chief of Corporate Affairs</a>
+                      <p>Journalist and author Anna von Bayern will take on the role as part of newly-appointed CEO Sue
+                        Y Nabi’s leadership</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="post-card-two">
+                    <div class="post-card-two__image"><img src="assets/images/blog/8.png"
+                        alt="How Covid-19 is forcing the beauty box industry to innovate" />
+                      <div class="post-card-two__info">
+                        <div class="post-card-two__info__date">
+                          <h5>05</h5>
+                          <p>Feb</p>
+                        </div>
+                        <div class="post-card-two__info__detail">
+                          <p>by <span>Lou Taylor</span></p><a href="blog.html#">Skin care</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-card-two__content"><a href="../../post-detail.html">How Covid-19 is forcing the beauty
+                        box industry to innovate</a>
+                      <p>Journalist and author Anna von Bayern will take on the role as part of newly-appointed CEO Sue
+                        Y Nabi’s leadership</p>
                     </div>
                   </div>
                 </div>
               </div>
+              <ul class="paginator">
+                <li class="page-item active">
+                  <button class="page-link">1</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link">2</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link"><i class="far fa-angle-right"></i></button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -276,7 +382,7 @@
     <div class="footer-one">
       <div class="container">
         <div class="footer-one__header">
-          <div class="footer-one__header__logo"><a href="../../homepages/homepage1"><img src="assets/images/logo.png"
+          <div class="footer-one__header__logo"><a href="homepage1"><img src="assets/images/logo.png"
                 alt="Logo" /></a></div>
           <div class="footer-one__header__newsletter"><span>Subscribe Newletter:</span>
             <div class="footer-one-newsletter">
@@ -318,7 +424,7 @@
                   <div class="col-12 col-sm-6">
                     <h5 class="footer-title">Account</h5>
                     <ul>
-                      <li><a href="checkout.html#">My account</a></li>
+                      <li><a href="blog.html#">My account</a></li>
                       <li><a href="wishlist.html">Wishlist</a></li>
                       <li><a href="cart">Cart</a></li>
                       <li><a href="fullwidth-4col">Shop</a></li>
@@ -351,7 +457,7 @@
       <div class="footer-one__footer">
         <div class="container">
           <div class="footer-one__footer__wrapper">
-            <p>© Copyright 2020 Beauty</p>
+            <p>© Copyright 2023 Tienda, By <a href="https://www.buckapi.us" target="_blank">Buckapi</a> </p> 
             <ul>
               <li><a href="contact.html">Privacy Policy</a></li>
               <li><a href="contact.html">Terms &amp; Condition</a></li>
@@ -370,17 +476,17 @@
               <h2>Shopping cart</h2>
               <div class="cart-item">
                 <div class="cart-item__image"><img src="assets/images/product/1.png" alt="Product image" /></div>
-                <div class="cart-item__info"><a href="../../product-detail.html">The expert mascaraa</a>
+                <div class="cart-item__info"><a href="product-detail.html">The expert mascaraa</a>
                   <h5>$35.00</h5>
                   <p>Quantity:<span> 1</span></p>
-                </div><a class="cart-item__remove" href="checkout.html#"><i class="fal fa-times"></i></a>
+                </div><a class="cart-item__remove" href="blog.html#"><i class="fal fa-times"></i></a>
               </div>
               <div class="cart-item">
                 <div class="cart-item__image"><img src="assets/images/product/3.png" alt="Product image" /></div>
-                <div class="cart-item__info"><a href="../../product-detail.html">Velvet Melon High Intensity</a>
+                <div class="cart-item__info"><a href="product-detail.html">Velvet Melon High Intensity</a>
                   <h5>$38.00</h5>
                   <p>Quantity:<span> 1</span></p>
-                </div><a class="cart-item__remove" href="checkout.html#"><i class="fal fa-times"></i></a>
+                </div><a class="cart-item__remove" href="blog.html#"><i class="fal fa-times"></i></a>
               </div>
               <div class="cart-items__total">
                 <div class="cart-items__total__price">
@@ -410,20 +516,20 @@
                 </div>
                 <div class="navigator-mobile">
                   <ul>
-                    <li class="relative"><a class="dropdown-menu-controller" href="checkout.html#">Home<span class="dropable-icon"><i
+                    <li class="relative"><a class="dropdown-menu-controller" href="blog.html#">Home<span class="dropable-icon"><i
                             class="fas fa-angle-down"></i></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="homepages/homepage1.html">Beauty Salon</a></li>
-                        <li><a href="homepages/homepage2.html">Makeup Salon</a></li>
-                        <li><a href="homepages/homepage3.html">Natural Shop</a></li>
-                        <li><a href="homepages/homepage4.html">Spa Shop</a></li>
-                        <li><a href="homepages/homepage5.html">Mask Shop</a></li>
-                        <li><a href="homepages/homepage6.html">Skincare Shop</a></li>
+                        <li><a href="homepage1.html">Beauty Salon</a></li>
+                        <li><a href="homepage2.html">Makeup Salon</a></li>
+                        <li><a href="homepage3.html">Natural Shop</a></li>
+                        <li><a href="homepage4.html">Spa Shop</a></li>
+                        <li><a href="homepage5.html">Mask Shop</a></li>
+                        <li><a href="homepage6.html">Skincare Shop</a></li>
                       </ul>
                     </li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a class="dropdown-menu-controller" href="checkout.html#">Shop<span class="dropable-icon"><i
+                    <li><a class="dropdown-menu-controller" href="blog.html#">Shop<span class="dropable-icon"><i
                             class="fas fa-angle-down"></i></span></a>
                       <ul class="dropdown-menu">
                         <ul class="dropdown-menu__col">
@@ -439,7 +545,7 @@
                           <li><a href="shop-list-sidebar.html">Shop List Sidebar</a></li>
                         </ul>
                         <ul class="dropdown-menu__col">
-                          <li><a href="checkout.html#">Product Detail</a></li>
+                          <li><a href="blog.html#">Product Detail</a></li>
                           <li><a href="cart.html">Shopping cart</a></li>
                           <li><a href="checkout.html">Checkout</a></li>
                           <li><a href="wishlist.html">Wish list</a></li>
@@ -504,7 +610,7 @@
               <div class="product-detail__content__header__comment-block">
                 <div class="rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                     class="fas fa-star"></i><i class="far fa-star"></i></div>
-                <p>03 review</p><a href="checkout.html#">Write a reviews</a>
+                <p>03 review</p><a href="blog.html#">Write a reviews</a>
               </div>
               <h3>$35.00</h3>
               <div class="divider"></div>
@@ -528,11 +634,11 @@
                     <div class="quantity-controller__number">2</div>
                     <div class="quantity-controller__btn -increase">+</div>
                   </div>
-                  <div class="add-to-cart -dark"><a class="btn -round -red" href="checkout.html#"><i
+                  <div class="add-to-cart -dark"><a class="btn -round -red" href="blog.html#"><i
                         class="fas fa-shopping-bag"></i></a>
                     <h5>Add to cart</h5>
                   </div>
-                  <div class="product-detail__controler__actions"></div><a class="btn -round -white" href="checkout.html#"><i
+                  <div class="product-detail__controler__actions"></div><a class="btn -round -white" href="blog.html#"><i
                       class="fas fa-heart"></i></a>
                 </div>
               </div>
